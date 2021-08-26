@@ -1,0 +1,57 @@
+{% from '../macros/icon.twig' import icon %}
+
+<footer class="footer">
+	<div class="container">
+			<div class="footer__holder">
+				<a href="/" class="footer__logo footer__box">
+					{{ icon('logo' , {'width': 247, 'height': 35}) }}
+				</a>
+				<nav class="footer-nav footer__box">
+					<ul>
+						<li><a href="#">Галерея</a></li>
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer__phone footer__box">
+					<span>{{ icon('phone' , {'width': 25, 'height': 25}) }}</span>
+					+375 33 213-45-24
+				</div>
+				<ul class="social footer__box">
+					<li>
+						<a href="#">
+							{{ icon('inst' , {'width': 12, 'height': 12}) }}
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							{{ icon('tlg' , {'width': 12, 'height': 11}) }}
+						</a>
+					</li>
+				</ul>
+				<a href="mailto:feelinglab@gmail.com" class="footer__mail footer__box">
+					<span>{{ icon('mail' , {'width': 20, 'height': 16}) }}</span>
+					feelinglab@gmail.com
+				</a>
+				<div class="footer__partners footer__box">
+					Наши партнеры
+					<ul>
+						<li>
+							<img src="assets/images/partners/sber.png" alt="Sber">
+						</li>
+						<li>
+							<img src="assets/images/partners/visa.png" alt="Visa">
+						</li>
+						<li>
+							<img src="assets/images/partners/vtb24.png" alt="Vtb24">
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copyright footer__box">
+					<a href="#">Политика конфеденциальности</a>
+					2021 © Feelings lab <br>
+					Разработано WSP-studio
+				</div>
+			</div>
+	</div>
+</footer>

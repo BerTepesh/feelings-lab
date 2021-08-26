@@ -1,0 +1,38 @@
+@import "imports";
+
+@import "modules/header";
+@import "modules/event-item";
+@import "gallery";
+
+
+.tech-page {
+	background-color: #fff;
+}
+
+.tech-button {
+	margin-bottom: 30px;
+}
+
+.tech-blocks {
+	margin-left: -20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	.event-item {
+		max-width: 350px;
+		width: 100%;
+		&__description {
+			min-height: 0;
+		}
+	}
+	.gallery-item {
+		max-width: 310px;
+		width: 100%;
+		margin-left: 20px;
+		margin-top: 20px;
+		&__description {
+			min-height: 0;
+		}
+	}
+}

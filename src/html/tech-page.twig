@@ -1,0 +1,115 @@
+{% extends 'layouts/base.twig' %}
+{% from '/macros/icon.twig' import icon %}
+
+{% block title %}Tech page{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<section class="tech-titles">
+			<h1 class="h1">H1 - semibold, 50px, 61px межстрочный интервал</h1>
+			<h2 class="h2">H2 -semibold, 30px, 61px межстрочный интервал</h2>
+			<h3 class="h3">H3 - semibold, 22px, 26px межстрочный интервал</h3>
+			<h4 class="h4">H4 - medium, 18px, 26px межстрочный интервал</h4>
+			<p>p - regular, 18px, 22px межстрочный интервал</p>
+			<h6 class="h6">H6 - medium, 18px, 24px межстрочный интервал</h6>
+			<h7 class="h7">H7 - medium, 12px, 24px межстрочный интервал</h7>
+		</section>
+		<section class="tech-menu">
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#">Галерея</a></li>
+					<li><a href="#">Мероприятия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>                                  
+			</nav>
+		</section>
+		<section class="tech-button">
+			<a href="#" class="btn btn-default">Хочу пойти!</a>
+		</section>
+		<section class="tech-blocks">
+			<div class="event-item">
+				<a href="#" class="lazyload" data-bg="assets/images/events/9.jpg">
+					<div class="event-item__info">
+						<h3 class="h3">Вечеринка. <br> Техно-карнавал</h3>
+						<div class="event-item__description">Техно музыка добавит шарма.</div>
+						<div class="event-item__detail">
+							<ul>
+								<li>
+									{{ icon('marker' , {'width': 14, 'height': 17}) }}
+									Москва 
+								</li>
+								<li>
+									{{ icon('clock' , {'width': 15, 'height': 15}) }}
+									21 декабря 22:00
+								</li>
+							</ul>
+						</div>
+					</div>
+				</a>
+			</div>
+			<a href="#" class="gallery-item">
+				<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/3.jpg"></div>
+				<div class="gallery-item__name">Название альбома</div>
+			</a>
+		</section>
+		<section class="tech-list">
+			<ul class="styled-list">
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+			</ul>
+			<ol class="styled-list">
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+				<li>Не следует, однако забывать, что рамки и место обучения кадров требуют</li>
+			</ol>
+		</section>
+		<section class="tech-table">
+			<div class="table">
+				<table>
+					<thead>
+						<tr>
+							<th>Список 1</th>
+							<th>Список 2</th>
+							<th>Список 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-label="Список 1">Текст</td>
+							<td data-label="Список 2">Разнообразный и богатый опыт </td>
+							<td data-label="Список 3">С другой стороны</td>
+						</tr>
+						<tr>
+							<td data-label="Список 1">Текст</td>
+							<td data-label="Список 2">Разнообразный и богатый опыт </td>
+							<td data-label="Список 3">С другой стороны</td>
+						</tr>
+						<tr>
+							<td data-label="Список 1">Текст</td>
+							<td data-label="Список 2">Разнообразный и богатый опыт </td>
+							<td data-label="Список 3">С другой стороны</td>
+						</tr>
+						<tr>
+							<td data-label="Список 1">Текст</td>
+							<td data-label="Список 2">Разнообразный и богатый опыт </td>
+							<td data-label="Список 3">С другой стороны</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="assets/stylesheets/tech-page.min.css"> 
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}

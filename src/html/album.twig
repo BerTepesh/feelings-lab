@@ -1,0 +1,64 @@
+{% extends 'layouts/base.twig' %}
+
+{% block title %}Альбом{% endblock %}
+
+{% block body %}
+	<div class="album" data-reveal-group>
+		<img class="album__circle lazyload" data-reveal data-reveal-transform='{"x": 80, "y": 0}' src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/circle.svg"></img>
+		<div class="container">
+			<div class="album__main">
+				<div class="album__img lazyload" data-bg="assets/images/album/1.jpg" data-reveal data-reveal-delay="100"></div>
+				<div class="album__description" data-reveal data-reveal-delay="200">
+					<h1 class="h2">Название альбома</h1>
+					<div class="album__text">
+						С другой стороны начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций
+					</div>
+				</div>
+			</div>
+			<div class="tabs album__gallery" data-plugin="tabs" data-reveal-group>
+				<ul class="tabs__control" data-reveal>
+					<li><a href="#tab1" data-tabs-btn class="active">Видео</a></li>
+					<li><a href="#tab2" data-tabs-btn>Фото</a></li>
+				</ul>
+				<ul class="tabs__content">
+					<li data-tabs-content="tab1" class="active">
+						<ul class="album-gallery">
+							<li class="album-gallery__item video" data-reveal data-reveal-delay="100">
+								<a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+							</li>
+							<li class="album-gallery__item video" data-reveal data-reveal-delay="200">
+								<a href="#" class="lazyload" data-bg="assets/images/album/gallery/2.jpg">&nbsp;</a>
+							</li>
+							<li class="album-gallery__item video" data-reveal data-reveal-delay="300">
+								<a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+							</li>
+						</ul>
+					</li>
+					<li data-tabs-content="tab2">
+						<ul class="album-gallery">
+							<li class="album-gallery__item" data-reveal data-reveal-delay="100">
+								<a href="#" class="lazyload" data-bg="assets/images/album/gallery/2.jpg">&nbsp;</a>
+							</li>
+							<li class="album-gallery__item" data-reveal data-reveal-delay="200">
+								<a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+							</li>
+							<li class="album-gallery__item" data-reveal data-reveal-delay="300">
+								<a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	{% include 'partials/subscribe.twig' %}
+{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="assets/stylesheets/album.min.css" />
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+ 

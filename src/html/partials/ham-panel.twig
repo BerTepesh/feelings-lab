@@ -1,0 +1,29 @@
+{% from '../macros/icon.twig' import icon %}
+
+<div class="ham-panel">
+	<div class="ham-panel__holder">
+		<nav class="ham-panel-nav">
+			<ul>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Мероприятия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="ham-panel__info">
+			<div class="ham-panel__phone">+375 33 213-45-24</div>
+			<ul class="social">
+				<li>
+					<a href="#">
+						{{ icon('inst' , {'width': 12, 'height': 12}) }}
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						{{ icon('tlg' , {'width': 12, 'height': 11}) }}
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>

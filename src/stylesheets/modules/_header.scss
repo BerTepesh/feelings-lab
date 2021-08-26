@@ -1,0 +1,162 @@
+.header {
+	z-index: 999;
+	&__holder {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 40px 0;
+
+		@include media-breakpoint-up(lg) {
+			padding: 0;
+		}
+	}
+
+	&__logo {
+		width: 247px;
+		height: 35px;
+		margin-right: 40px;
+		color: #000;
+		transition: color .3s ease-in-out;
+		text-decoration: none;
+
+		svg {
+			max-width: 100%;
+		}
+	}
+
+	&__info {
+		text-align: right;
+		margin-left: 20px;
+		display: none;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	&__phone {
+		font-weight: 600;
+		font-size: 2.2rem;
+		line-height: 22 / 26 * 1em;
+		white-space: nowrap;
+	}
+
+	.social {
+		margin-right: 35px;
+	}
+}
+
+.header_sticky {
+	transition: all .4s ease-in-out;
+	will-change: transform;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.header_sticky.sticky {
+	opacity: 0;
+	transform: translateY(-70%);
+}
+
+.header_sticky.active {
+	transition: all .4s ease-in-out;
+	opacity: 1;
+	transform: none;
+	background-color: #0b0f12;
+	box-shadow: 0 -5px 10px 5px rgba(0, 0, 0, .2);
+}
+
+.main-nav {
+	flex: 1;
+	display: none;
+	max-width: 520px;
+	@include media-breakpoint-up(lg) {
+		display: block;
+		padding-left: 30px;
+	}
+
+	& > ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		padding-left: 0;
+		margin: 0;
+
+		& > li {
+			position: relative;
+			background-color: rgba(255, 255, 255, 0);
+			transition: background-color .3s ease-in-out;
+
+			& > a,
+			& > span {
+				text-decoration: none;
+				color: #fff;
+				white-space: nowrap;
+				padding: 45px 15px;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			&:hover {
+				font-weight: 600;
+			}
+
+			&.active {
+				pointer-events: none;
+			} 
+		}
+	}
+}
+
+.ham-trigger {
+	position: relative;
+	width: 30px;
+	height: 25px;
+	margin-left: 20px;
+	text-decoration: none;
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transition: all .4s;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto 0;
+	}
+
+	&:before {
+		border-top: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+		border-radius: 3px;
+	}
+
+	&:after {
+		height: 3px;
+		background: #fff;
+		border-radius: 3px;
+	}
+
+	&.active {
+		&:before { 
+			transform: rotate(45deg);
+			border-bottom: none;
+			height: 3px;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}		
+	}
+}

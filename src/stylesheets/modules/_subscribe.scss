@@ -1,0 +1,61 @@
+.subscribe {
+	padding: 40px 0 80px;
+	position: relative;
+	z-index: 4;
+
+	.h2 {
+		margin-bottom: 35px;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		right: -400px;
+		top: -10px;
+		width: 399px;
+		height: 70px;
+		display: none;
+		background: url(../../assets/images/shapes.svg) no-repeat;
+
+		@include media-breakpoint-up("lg") {
+			right: -100px;
+			display: block;
+		}
+
+		@include media-breakpoint-up("xl") {
+			right: 0;
+		}
+	}
+	
+	&__form {
+		@include media-breakpoint-up("xl") {
+			padding: 0 40px;
+		}
+
+		.form-control {
+			width: 100%;
+
+			@include media-breakpoint-up("md") {
+				width: 36%;
+			}
+			
+			&:last-of-type {
+				@include media-breakpoint-up("md") {
+					width: 28%;
+				}
+			}
+
+			button {
+				margin-bottom: 15px;
+				width: 100%;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	}
+
+	&__agree {
+		font-size: 1.2rem;
+		line-height: 14 / 12 * 1em;
+	}
+}

@@ -1,0 +1,35 @@
+{% extends 'layouts/base.twig' %}
+{% from '/macros/icon.twig' import icon %}
+
+{% block title %}О проекте{% endblock %}
+
+{% block body %}
+	<div class="event-card event-card_project">
+		<div class="container" data-reveal-group>
+			<div class="event-card__main">
+				<img class="event-card__circle lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/circle.svg" data-reveal data-reveal-delay="400" data-reveal-slide="false"></img>
+				<div class="event-card__img lazyload" data-bg="assets/images/about.jpg" data-reveal>
+				</div>
+				<div class="event-card__info">
+					<h1 class="h2" data-reveal data-reveal-delay="200">О проекте</h1>
+					<div class="event-card__description" data-reveal data-reveal-delay="300">
+						С другой стороны начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций
+					</div>
+					<div class="event-card__btn" data-reveal data-reveal-delay="500">
+						<a href="#" class="btn btn-default btn-slim">Смотреть мероприятия</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include 'partials/subscribe.twig' %}
+{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="assets/stylesheets/event-card.min.css" />
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+ 

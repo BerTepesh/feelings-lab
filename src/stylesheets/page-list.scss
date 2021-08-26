@@ -1,0 +1,17 @@
+@import "imports";
+
+.page-list {
+	padding-top: 100px;
+	color: #fff;
+	height: 100vh;
+	
+	ol {
+			padding-left: 20px;
+			li {
+					margin-bottom: 10px;
+					a {
+						color: #fff;
+					}
+			}
+	}
+}

@@ -1,0 +1,51 @@
+.tabs {
+	&__control {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		padding-left: 0;
+		margin: 0 0 45px -10px;
+
+		& > li {
+			margin-left: 10px;
+
+			& > a {
+				background-color: #191f23;
+				color: #636363;
+				display: block;
+				font-weight: 500;
+				padding: 13px 30px;
+				cursor: pointer;
+				text-decoration: none;
+				transition: all .3s ease-in-out;
+
+				&.active {
+					background-color: #a00711;
+					color: #fff;
+					pointer-events: none;
+				}
+			}
+		}
+	}
+
+	&__content {
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+
+		& > li {
+			opacity: 0;
+			transition: opacity .3s ease-in-out;
+			overflow: hidden;
+			width: 0;
+			height: 0;
+
+			&.active {
+				opacity: 1;
+				width: auto;
+				height: auto;
+			}
+		}
+		
+	}
+}

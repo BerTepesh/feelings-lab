@@ -1,0 +1,11 @@
+.slider {
+	margin-bottom: 25px;
+
+	@include media-breakpoint-up("sm") {
+		padding: 0 80px;
+	}
+
+	&__item {
+		padding: 20px;
+	}
+}

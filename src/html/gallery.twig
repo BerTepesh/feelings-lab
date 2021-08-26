@@ -1,0 +1,67 @@
+{% extends 'layouts/base.twig' %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block body %}
+	<div class="gallery" data-reveal-group>
+		<img class="gallery__circle lazyload" data-reveal data-reveal-transform='{"x": 80, "y": 0}' src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/circle.svg"></img>
+		<div class="container">
+			<h1 class="h2 text-center" data-reveal>Галерея</h1>
+			<ul class="gallery__list">
+				<li data-reveal data-reveal-delay="100">
+					<a href="#" class="gallery-item">
+						<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/1.jpg"></div>
+						<div class="gallery-item__name">Название альбома</div>
+					</a>
+				</li>
+				<li data-reveal data-reveal-delay="200">
+					<a href="#" class="gallery-item">
+						<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/2.jpg"></div>
+						<div class="gallery-item__name">Название альбома</div>
+					</a>
+				</li>
+				<li data-reveal data-reveal-delay="400">
+					<a href="#" class="gallery-item">
+						<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/3.jpg"></div>
+						<div class="gallery-item__name">Название альбома</div>
+					</a>
+				</li>
+				<li data-reveal data-reveal-delay="500">
+					<a href="#" class="gallery-item">
+						<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/1.jpg"></div>
+						<div class="gallery-item__name">Название альбома</div>
+					</a>
+				</li>
+				<li data-reveal data-reveal-delay="600">
+					<a href="#" class="gallery-item">
+						<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/2.jpg"></div>
+						<div class="gallery-item__name">Название альбома</div>
+					</a>
+				</li>
+				<li data-reveal data-reveal-delay="700">
+					<a href="#" class="gallery-item">
+						<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/1.jpg"></div>
+						<div class="gallery-item__name">Название альбома</div>
+					</a>
+				</li>
+				<li data-reveal data-reveal-delay="800">
+					<a href="#" class="gallery-item">
+						<div class="gallery-item__img lazyload" data-bg="assets/images/gallery/3.jpg"></div>
+						<div class="gallery-item__name">Название альбома</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	{% include 'partials/subscribe.twig' %}
+{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="assets/stylesheets/gallery.min.css" />
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+ 

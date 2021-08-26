@@ -1,0 +1,54 @@
+.intro {
+	padding-top: 115px;
+	margin: -115px auto 0;
+	max-width: 1920px;
+	height: 600px;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 0;
+
+	@include media-breakpoint-up("sm") {
+		background-position: 35% 0;
+	}
+
+	@include media-breakpoint-up("lg") {
+		height: 780px;
+		background-position: center 0;
+	}
+
+	@include media-breakpoint-up("xxxl") {
+		background-size: 1920px auto;
+		position: relative;
+		z-index: 1;
+
+		&:before {
+			position: absolute;
+			content: '';
+			z-index: -1;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: linear-gradient(90deg, rgba(11,15,18,1) 0%, rgba(11,15,18,0) 10%, rgba(11,15,18,0) 90%, rgba(11,15,18,1) 100%);
+		}
+	}
+	
+	&__holder {
+		margin-top: -100px;
+		@include media-breakpoint-up("sm") {
+			max-width: 50%;
+		}
+
+		@include media-breakpoint-up("lg") {
+			margin-top: -180px;
+		}
+	}
+
+	&__text {
+		max-width: 340px;
+		margin-bottom: 40px;
+	}
+}

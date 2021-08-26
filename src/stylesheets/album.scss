@@ -1,0 +1,64 @@
+@import "imports";
+
+@import "components/tabs";
+@import "components/album-gallery";
+
+.album {
+	position: relative;
+	padding-top: 55px;
+
+	&__circle {
+		position: absolute;
+		width: 169px;
+		height: 170px;
+		display: none;
+		z-index: 1;	
+
+		@include media-breakpoint-up("sm") {
+			left: -50px;
+			top: -10px;
+			display: block;
+		}
+	}
+
+	&__main {
+		margin-bottom: 55px;
+
+		@include media-breakpoint-up("md") {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	&__img {
+		height: 413px;
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		margin-bottom: 40px;
+		box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.85);
+		-webkit-box-shadow: 0px 4px 67px rgba(0, 0, 0, 0.85);
+		-moz-box-shadow:    0px 4px 67px rgba(0, 0, 0, 0.85);
+
+		@include media-breakpoint-up("md") {
+			width: 40%;
+			margin-bottom: 0;
+		}
+	}
+
+	&__description {
+	
+		@include media-breakpoint-up("md") {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__gallery {
+		margin-bottom: 70px;
+	}
+}

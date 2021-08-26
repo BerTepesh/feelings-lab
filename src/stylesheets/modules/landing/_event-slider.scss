@@ -1,0 +1,56 @@
+@import "~slick-carousel/slick/slick";
+@import "components/slider";
+
+@import "modules/landing/slider";
+@import "modules/event-item";
+
+.event-slider {
+	padding: 85px 0;
+	position: relative;
+	background-color: #000;
+	z-index: 2;
+	
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: -37px;
+		width: 399px;
+		height: 70px;
+		background: url(../../assets/images/shapes.svg) no-repeat;
+	}
+
+	&:before {
+		right: -300px;
+
+		@include media-breakpoint-up("md") {
+			right: -200px;
+		}
+
+		@include media-breakpoint-up("lg") {
+			right: 0;
+		}
+	}
+
+	&:after {
+		left: -300px;
+
+		@include media-breakpoint-up("md") {
+			left: -200px;
+		}
+
+		@include media-breakpoint-up("lg") {
+			left: 0;
+		}
+	}
+
+	&__btn {
+		text-align: center;
+	}
+}
+
+.event-item {
+	&__description {
+		min-height: 0;
+	}
+}

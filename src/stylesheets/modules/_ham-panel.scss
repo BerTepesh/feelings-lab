@@ -1,0 +1,86 @@
+.ham-panel {
+	height: calc(100vh);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 115px 0 40px;
+	opacity: 0;
+	transform: translateX(200px);
+	transition: all .65s ease-in-out; 
+
+	&.active {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	@include media-breakpoint-up(sm) {
+		width: 300px;
+		left: auto;
+	}
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+	&__holder {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		overflow-y: scroll;
+	}
+
+	&__info {
+		padding: 0 40px;
+		text-align: center;
+	}
+
+	&__phone {
+		margin-bottom: 20px;
+	}
+
+	.social {
+		justify-content: center;
+	}
+}
+
+.ham-panel-nav {
+	margin-bottom: 30px;
+	
+	& > ul {
+		padding-left: 0;
+		list-style: none;
+		
+		& > li {	
+			margin-bottom: 5px;
+			
+			& > a,
+			& > span {
+				color: #fff;
+				padding: 10px 40px;
+				text-decoration: none;
+				display: block;
+			}
+		}
+	}
+}
+
+.page-content {
+
+	@include media-breakpoint-up(sm) {
+		box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.2);
+	}
+	
+	&.ham-active {
+		transform: translateX(-100%);
+
+		@include media-breakpoint-up(sm) {
+			transform: translateX(-300px);
+		}
+
+		@include media-breakpoint-up(lg ) {
+			transform: translateX(0);
+		}
+	}
+}
