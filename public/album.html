@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/manifest/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/manifest/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/manifest/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/manifest/favicon-16x16.png">
+  <link rel="mask-icon" href="assets/manifest/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Альбом</title>
+  <meta name="description" content="" />
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+    if (document.documentElement.style.setProperty) {
+      document.documentElement.style.setProperty('--viewport-height', window.innerHeight + 'px');
+      document.documentElement.style.setProperty('--viewport-height-actual', window.innerHeight + 'px');
+    }
+  </script>
+  <link rel="stylesheet" href="assets/stylesheets/global.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/album.min.css" />
+</head>
+
+<body data-plugin="reveal" data-preload>
+  <div class="page-content-wrapper">
+    <div class="preloader visible">
+      <div class="preloader__loader"></div>
+    </div>
+    <header class="header header_sticky ">
+      <div class="container">
+        <div class="header__holder">
+          <a href="/" class="header__logo">
+            <svg class="icon icon-logo" width="247" height="35" role="presentation">
+              <use href="assets/images/icons.svg#logo" xlink:href="assets/images/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Мероприятия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <svg class="icon icon-inst" width="12" height="12" role="presentation">
+                    <use href="assets/images/icons.svg#inst" xlink:href="assets/images/icons.svg#inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon icon-tlg" width="12" height="11" role="presentation">
+                    <use href="assets/images/icons.svg#tlg" xlink:href="assets/images/icons.svg#tlg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="header__phone">+375 33 213-45-24</div>
+          </div>
+          <a href="#" class="ham-trigger">&nbsp;</a>
+        </div>
+      </div>
+    </header>
+    <div class="ham-panel">
+      <div class="ham-panel__holder">
+        <nav class="ham-panel-nav">
+          <ul>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="ham-panel__info">
+          <div class="ham-panel__phone">+375 33 213-45-24</div>
+          <ul class="social">
+            <li>
+              <a href="#">
+                <svg class="icon icon-inst" width="12" height="12" role="presentation">
+                  <use href="assets/images/icons.svg#inst" xlink:href="assets/images/icons.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon icon-tlg" width="12" height="11" role="presentation">
+                  <use href="assets/images/icons.svg#tlg" xlink:href="assets/images/icons.svg#tlg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-content">
+      <main>
+        <div class="album" data-reveal-group>
+          <img class="album__circle lazyload" data-reveal data-reveal-transform='{"x": 80, "y": 0}' src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/circle.svg"></img>
+          <div class="container">
+            <div class="album__main">
+              <div class="album__img lazyload" data-bg="assets/images/album/1.jpg" data-reveal data-reveal-delay="100"></div>
+              <div class="album__description" data-reveal data-reveal-delay="200">
+                <h1 class="h2">Название альбома</h1>
+                <div class="album__text"> С другой стороны начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций </div>
+              </div>
+            </div>
+            <div class="tabs album__gallery" data-plugin="tabs" data-reveal-group>
+              <ul class="tabs__control" data-reveal>
+                <li><a href="#tab1" data-tabs-btn class="active">Видео</a></li>
+                <li><a href="#tab2" data-tabs-btn>Фото</a></li>
+              </ul>
+              <ul class="tabs__content">
+                <li data-tabs-content="tab1" class="active">
+                  <ul class="album-gallery">
+                    <li class="album-gallery__item video" data-reveal data-reveal-delay="100">
+                      <a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+                    </li>
+                    <li class="album-gallery__item video" data-reveal data-reveal-delay="200">
+                      <a href="#" class="lazyload" data-bg="assets/images/album/gallery/2.jpg">&nbsp;</a>
+                    </li>
+                    <li class="album-gallery__item video" data-reveal data-reveal-delay="300">
+                      <a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+                    </li>
+                  </ul>
+                </li>
+                <li data-tabs-content="tab2">
+                  <ul class="album-gallery">
+                    <li class="album-gallery__item" data-reveal data-reveal-delay="100">
+                      <a href="#" class="lazyload" data-bg="assets/images/album/gallery/2.jpg">&nbsp;</a>
+                    </li>
+                    <li class="album-gallery__item" data-reveal data-reveal-delay="200">
+                      <a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+                    </li>
+                    <li class="album-gallery__item" data-reveal data-reveal-delay="300">
+                      <a href="#" class="lazyload" data-bg="assets/images/album/gallery/1.jpg">&nbsp;</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="container" data-reveal-group>
+            <h2 class="h2 text-center" data-reveal>Подписка на рассылку</h2>
+            <form action="" class="subscribe__form">
+              <div class="form-group">
+                <div class="form-control" data-reveal data-reveal-delay="200">
+                  <input type="text" placeholder="Имя">
+                </div>
+                <div class="form-control" data-reveal data-reveal-delay="300">
+                  <input type="text" placeholder="E-mail">
+                </div>
+                <div class="form-control" data-reveal data-reveal-delay="400">
+                  <button type="submit" class="btn btn-default">Подписаться</button>
+                  <p class="subscribe__agree"> Нажимая на “Подписаться”,Вы даете согласие на обработку персональных данных и соглашаетесь с пользовательським соглашением и политикой конфиденциальности </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__holder">
+            <a href="/" class="footer__logo footer__box">
+              <svg class="icon icon-logo" width="247" height="35" role="presentation">
+                <use href="assets/images/icons.svg#logo" xlink:href="assets/images/icons.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="footer-nav footer__box">
+              <ul>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="footer__phone footer__box">
+              <span><svg class="icon icon-phone" width="25" height="25" role="presentation"><use href="assets/images/icons.svg#phone" xlink:href="assets/images/icons.svg#phone"></use></svg></span> +375 33 213-45-24
+            </div>
+            <ul class="social footer__box">
+              <li>
+                <a href="#">
+                  <svg class="icon icon-inst" width="12" height="12" role="presentation">
+                    <use href="assets/images/icons.svg#inst" xlink:href="assets/images/icons.svg#inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon icon-tlg" width="12" height="11" role="presentation">
+                    <use href="assets/images/icons.svg#tlg" xlink:href="assets/images/icons.svg#tlg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a href="mailto:feelinglab@gmail.com" class="footer__mail footer__box">
+              <span><svg class="icon icon-mail" width="20" height="16" role="presentation"><use href="assets/images/icons.svg#mail" xlink:href="assets/images/icons.svg#mail"></use></svg></span> feelinglab@gmail.com </a>
+            <div class="footer__partners footer__box"> Наши партнеры <ul>
+                <li>
+                  <img src="assets/images/partners/sber.png" alt="Sber">
+                </li>
+                <li>
+                  <img src="assets/images/partners/visa.png" alt="Visa">
+                </li>
+                <li>
+                  <img src="assets/images/partners/vtb24.png" alt="Vtb24">
+                </li>
+              </ul>
+            </div>
+            <div class="footer__copyright footer__box">
+              <a href="#">Политика конфеденциальности</a> 2021 © Feelings lab <br>
+					Разработано WSP-studio
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="js-modal">
+      <div class="request-modal form" id="dialog-content" style="display:none;">
+        <div class="request-modal__holder">
+          <form action="">
+            <h2>Отправить заявку</h2>
+            <div class="form-group">
+              <div class="form-control">
+                <input type="text" placeholder="Имя">
+              </div>
+              <div class="form-control">
+                <input type="text" placeholder="E-mail">
+              </div>
+              <div class="form-control">
+                <button type="submit" class="btn btn-default">Оставить заявку</button>
+                <p class="form__agree"> Нажимая на “Подписаться”,Вы даете согласие на обработку персональных данных и соглашаетесь с пользовательським соглашением и политикой конфиденциальности </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/javascripts/main.js"></script>
+</body>
+
+</html>
