@@ -57,5 +57,10 @@
 	&__agree {
 		font-size: 1.2rem;
 		line-height: 14 / 12 * 1em;
+		
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
 	}
 }

@@ -198,8 +198,6 @@
 	text-align: center;
 	grid-area: B;
 	margin-bottom: 30px;
-	margin-left: -25px;
-	margin-right: -20px;
 
 	@include media-breakpoint-up(xl) {
 		margin-bottom: 0;
