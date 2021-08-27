@@ -8,7 +8,7 @@ class IntroSlider extends Slider {
 	static get Defaults () {
 		return $.extend({}, Slider.Defaults, {
 			arrows: false,
-			dots: false,
+			dots: true,
 			autoplay: true,
   		autoplaySpeed: 3000,
 			slidesToShow: 1,
