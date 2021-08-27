@@ -13,8 +13,11 @@ import '../modules/ham-panel';
 import '../modules/smooth-scroll';
 import '../modules/modal';
 import '../modules/reveal';
+import '../modules/validation.js';
 
-import '../modules/event-slider/events-slider.js';
+import '../modules/intro-slider.js';
+import '../modules/events-slider.js';
+
 import '../components/tabs.js';
 
 

@@ -249,6 +249,7 @@ input::placeholder {
 }
 
 .form-control {
+    position: relative;
     input {
         width: 100%;
         padding: 23px 35px;
@@ -259,6 +260,15 @@ input::placeholder {
         &:focus {
             outline: none;
         }
+    }
+
+    label.error {
+        font-size: 1.4rem;
+        padding: 5px 10px 0;
+        margin-bottom: -15px;
+        text-align: left;
+        display: block;
+        color: red;
     }
 }
 
@@ -292,6 +302,11 @@ input::placeholder {
         font-size: 1.2rem;
         line-height: 14 / 12 * 1em;
         text-align: left;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
 
@@ -357,6 +372,30 @@ input::placeholder {
     width: auto;
     svg {
         color: #000;
+    }
+}
+
+.fancybox__carousel {
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    .fancybox__slide {
+        
+    }
+    .fancybox__content {
+        width: 100%;
+    }
+    .fancybox__content >.carousel__button.is-close {
+        // position: absolute;
+        // right: 30px;
+        // left: auto;
+        // top: 30px;
+        // width: auto;
+        // svg {
+        //     color: #fff;
+        // }
+        display: none;
     }
 }
 

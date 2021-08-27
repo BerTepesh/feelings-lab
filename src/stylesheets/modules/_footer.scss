@@ -124,6 +124,12 @@
 		@include media-breakpoint-up(xl) {
 			padding-left: 35px;
 		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			font-weight: 500;
+		}
 	}
 
 	&__mail {
@@ -170,15 +176,20 @@
 		}
 
 		a {
-			display: flex;
-			margin-bottom: 5px;
 			text-decoration: none;
 			color: #fff;
-			justify-content: center;
+		}
+	}
 
-			@include media-breakpoint-up(xl) {
-				justify-content: flex-start;
-			}
+	
+
+	&__politics {
+		display: flex;
+		margin-bottom: 5px;
+		justify-content: center;
+
+		@include media-breakpoint-up(xl) {
+			justify-content: flex-start;
 		}
 	}
 }
@@ -187,6 +198,8 @@
 	text-align: center;
 	grid-area: B;
 	margin-bottom: 30px;
+	margin-left: -25px;
+	margin-right: -20px;
 
 	@include media-breakpoint-up(xl) {
 		margin-bottom: 0;
@@ -208,16 +221,26 @@
 			justify-content: space-around;
 		}
 
-		li {
+		& > li {
 			margin: 0 20px 10px;
 
 			@include media-breakpoint-up(xl) {	
 				margin: 0 0 10px;
 			}
-			a {
+			& > a {
 				text-decoration: none;
 				color: #fff;
 			}
+
+			&.active {
+				pointer-events: none;
+
+				a {
+					font-weight: 600;
+				}
+			}
 		}
+
+		 
 	}
 }

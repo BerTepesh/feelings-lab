@@ -3,30 +3,31 @@
 <header class="header header_sticky {{ headerAttrs.class|default('') }}">
 	<div class="container">
 			<div class="header__holder">
-				<a href="/" class="header__logo">
+				<a href="index.html" class="header__logo">
 					{{ icon('logo' , {'width': 247, 'height': 35}) }}
 				</a>
 				<nav class="main-nav">
 					<ul>
-						<li><a href="#">Галерея</a></li>
-						<li><a href="#">Мероприятия</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li {% if curPage == "project" %} class="active"{% endif %}><a href="project.html">О проекте</a></li>
+						<li {% if curPage == "gallery" %} class="active"{% endif %}><a href="gallery.html">Галерея</a></li>
+						<li {% if curPage == "events" %} class="active"{% endif %}><a href="events.html">Мероприятия</a></li>
+						<li {% if curPage == "contscts" %} class="active"{% endif %}><a href="#">Контакты</a></li>
 					</ul>                                  
 				</nav>
 				<div class="header__info">
 					<ul class="social">
 						<li>
-							<a href="#">
+							<a href="#" target="_blank" rel="noopener noreferrer">
 								{{ icon('inst' , {'width': 12, 'height': 12}) }}
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" target="_blank" rel="noopener noreferrer">
 								{{ icon('tlg' , {'width': 12, 'height': 11}) }}
 							</a>
 						</li>
 					</ul>
-					<div class="header__phone">+375 33 213-45-24</div>
+					<div class="header__phone"><a href="tel:+375 33 213-45-24">+375 33 213-45-24</a></div>
 				</div>
 				<a href="#" class="ham-trigger">&nbsp;</a>
 			</div>
