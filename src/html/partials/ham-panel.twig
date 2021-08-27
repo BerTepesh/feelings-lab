@@ -4,9 +4,9 @@
 	<div class="ham-panel__holder">
 		<nav class="ham-panel-nav">
 			<ul>
-				<li><a href="#">Галерея</a></li>
-				<li><a href="#">Мероприятия</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li {% if curPage == "project" %} class="active"{% endif %}><a href="project.html">О проекте</a></li>
+				<li {% if curPage == "gallery" %} class="active"{% endif %}><a href="gallery.html">Галерея</a></li>
+				<li {% if curPage == "events" %} class="active"{% endif %}><a href="events.html">Мероприятия</a></li>
 			</ul>
 		</nav>
 		<div class="ham-panel__info">
