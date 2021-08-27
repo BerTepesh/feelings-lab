@@ -62,6 +62,13 @@
 				text-decoration: none;
 				display: block;
 			}
+
+			&.active {
+				pointer-events: none;
+				a {
+					font-weight: 600;
+				}
+			}
 		}
 	}
 }
