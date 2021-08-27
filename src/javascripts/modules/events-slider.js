@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 import createPlugin from 'jquery-plugin-generator';
-import Slider from '../../components/slider';
+import Slider from '../components/slider';
 
 class EventsSlider extends Slider {
 

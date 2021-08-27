@@ -1,33 +1,18 @@
 .intro {
 	padding-top: 115px;
 	margin: -115px auto 0;
-	max-width: 1920px;
-	height: 600px;
-	display: flex;	
-	flex-direction: column;
-	justify-content: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center 0;
-
-	@include media-breakpoint-up("sm") {
-		background-position: 35% 0;
-	}
-
-	@include media-breakpoint-up("lg") {
-		height: 780px;
-		background-position: center 0;
-	}
 
 	@include media-breakpoint-up("xxxl") {
-		background-size: 1920px auto;
 		position: relative;
 		z-index: 1;
+		max-width: 1920px;
+		overflow: hidden;
 
-		&:before {
+		&:after {
 			position: absolute;
 			content: '';
-			z-index: -1;
+			z-index: 1;
+			pointer-events: none;;
 			top: 0;
 			left: 0;
 			bottom: 0;
@@ -36,14 +21,57 @@
 		}
 	}
 	
+	&.slider {
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	& .slider__item {
+		padding: 0;
+		overflow: visible;
+	}
+
+	&__item {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center 0;
+		height: 600px;
+	
+		@include media-breakpoint-up("sm") {
+			background-position: 35% 0;
+		}
+	
+		@include media-breakpoint-up("lg") {
+			height: 780px;
+			background-position: center 0;
+		}
+	
+		@include media-breakpoint-up("xxxl") {
+			background-size: 1920px auto;
+		}
+
+		& .container {
+			display: flex;	
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+			padding: 0 30px;
+			@include media-breakpoint-up("sm") {
+				padding: 0 20px;
+			}
+		}
+	}
+	
 	&__holder {
-		margin-top: -100px;
+		margin-top: -30px;
+		position: relative;
+		z-index: 99;
 		@include media-breakpoint-up("sm") {
 			max-width: 50%;
 		}
 
 		@include media-breakpoint-up("lg") {
-			margin-top: -180px;
+			margin-top: -80px;
 		}
 	}
 

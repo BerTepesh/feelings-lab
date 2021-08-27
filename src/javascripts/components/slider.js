@@ -7,7 +7,10 @@ export default class Slider {
 			return {
 					'arrows': false,
 					'dots': false,
+					'autoplay': false,
+  				'autoplaySpeed': 2000,
 					'slidesToShow': 1,
+					'infinite': false,
 					'responsive': []
 			};
 	}
@@ -21,10 +24,10 @@ export default class Slider {
 			dots: options.dots,
 			slidesToShow: options.slidesToShow,
 			swipeToSlide: true,
-			infinite: false,
+			infinite: options.infinite,
 			accessibility: false,
-			autoplay: false,
-			autoplaySpeed: 2500,
+			autoplay: options.autoplay,
+			autoplaySpeed: options.autoplaySpeed,
 			speed: 900,
 			prevArrow: '<button type="button" class="prev"></button>',
 			nextArrow: '<button type="button" class="next"></button>',
