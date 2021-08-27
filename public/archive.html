@@ -35,36 +35,37 @@
     <header class="header header_sticky ">
       <div class="container">
         <div class="header__holder">
-          <a href="/" class="header__logo">
+          <a href="index.html" class="header__logo">
             <svg class="icon icon-logo" width="247" height="35" role="presentation">
               <use href="assets/images/icons.svg#logo" xlink:href="assets/images/icons.svg#logo"></use>
             </svg>
           </a>
           <nav class="main-nav">
             <ul>
-              <li><a href="#">Галерея</a></li>
-              <li><a href="#">Мероприятия</a></li>
+              <li><a href="project.html">О проекте</a></li>
+              <li><a href="gallery.html">Галерея</a></li>
+              <li><a href="events.html">Мероприятия</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
           <div class="header__info">
             <ul class="social">
               <li>
-                <a href="#">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <svg class="icon icon-inst" width="12" height="12" role="presentation">
                     <use href="assets/images/icons.svg#inst" xlink:href="assets/images/icons.svg#inst"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <svg class="icon icon-tlg" width="12" height="11" role="presentation">
                     <use href="assets/images/icons.svg#tlg" xlink:href="assets/images/icons.svg#tlg"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-            <div class="header__phone">+375 33 213-45-24</div>
+            <div class="header__phone"><a href="tel:+375 33 213-45-24">+375 33 213-45-24</a></div>
           </div>
           <a href="#" class="ham-trigger">&nbsp;</a>
         </div>
@@ -127,20 +128,20 @@
             </div>
             <ul class="event-card__gallery album-gallery" data-reveal-group>
               <li class="album-gallery__item video" data-reveal data-reveal-delay="100">
-                <a href="#" class="lazyload" data-bg="assets/images/events/10.jpg">&nbsp;</a>
+                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="lazyload" data-bg="assets/images/events/10.jpg" data-fancybox="gallery">&nbsp;</a>
               </li>
               <li class="album-gallery__item" data-reveal data-reveal-delay="200">
-                <a href="#" class="lazyload" data-bg="assets/images/events/11.jpg">&nbsp;</a>
+                <a href="assets/images/events/11.jpg" class="lazyload" data-bg="assets/images/events/11.jpg" data-fancybox="gallery">&nbsp;</a>
               </li>
               <li class="album-gallery__item" data-reveal data-reveal-delay="300">
-                <a href="#" class="lazyload" data-bg="assets/images/events/12.jpg">&nbsp;</a>
+                <a href="assets/images/events/12.jpg" class="lazyload" data-bg="assets/images/events/12.jpg" data-fancybox="gallery">&nbsp;</a>
               </li>
               <li class="album-gallery__item" data-reveal data-reveal-delay="400">
-                <a href="#" class="lazyload" data-bg="assets/images/events/12.jpg">&nbsp;</a>
+                <a href="assets/images/events/12.jpg" class="lazyload" data-bg="assets/images/events/12.jpg" data-fancybox="gallery">&nbsp;</a>
               </li>
             </ul>
             <div class="text-center" data-reveal data-reveal-delay="500">
-              <a href="#" class="btn btn-default">Смотреть галерею</a>
+              <a href="gallery.html" class="btn btn-default">Смотреть галерею</a>
             </div>
           </div>
         </div>
@@ -150,10 +151,10 @@
             <form class="subscribe__form">
               <div class="form-group">
                 <div class="form-control" data-reveal data-reveal-delay="200">
-                  <input type="text" placeholder="Имя">
+                  <input type="text" name="Name" placeholder="Имя">
                 </div>
                 <div class="form-control" data-reveal data-reveal-delay="300">
-                  <input type="text" placeholder="E-mail">
+                  <input type="text" name="Email" placeholder="E-mail">
                 </div>
                 <div class="form-control" data-reveal data-reveal-delay="400">
                   <button type="submit" class="btn btn-default">Подписаться</button>
@@ -167,31 +168,33 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__holder">
-            <a href="/" class="footer__logo footer__box">
+            <a href="index.html" class="footer__logo footer__box">
               <svg class="icon icon-logo" width="247" height="35" role="presentation">
                 <use href="assets/images/icons.svg#logo" xlink:href="assets/images/icons.svg#logo"></use>
               </svg>
             </a>
             <nav class="footer-nav footer__box">
               <ul>
-                <li><a href="#">Галерея</a></li>
-                <li><a href="#">Мероприятия</a></li>
+                <li><a href="project.html">О проекте</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="events.html">Мероприятия</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
             </nav>
             <div class="footer__phone footer__box">
-              <span><svg class="icon icon-phone" width="25" height="25" role="presentation"><use href="assets/images/icons.svg#phone" xlink:href="assets/images/icons.svg#phone"></use></svg></span> +375 33 213-45-24
+              <span><svg class="icon icon-phone" width="25" height="25" role="presentation"><use href="assets/images/icons.svg#phone" xlink:href="assets/images/icons.svg#phone"></use></svg></span>
+              <a href="tel:+375 33 213-45-24">+375 33 213-45-24</a>
             </div>
             <ul class="social footer__box">
               <li>
-                <a href="#">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <svg class="icon icon-inst" width="12" height="12" role="presentation">
                     <use href="assets/images/icons.svg#inst" xlink:href="assets/images/icons.svg#inst"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <svg class="icon icon-tlg" width="12" height="11" role="presentation">
                     <use href="assets/images/icons.svg#tlg" xlink:href="assets/images/icons.svg#tlg"></use>
                   </svg>
@@ -213,8 +216,8 @@
               </ul>
             </div>
             <div class="footer__copyright footer__box">
-              <a href="#">Политика конфеденциальности</a> 2021 © Feelings lab <br>
-					Разработано WSP-studio
+              <a href="#" class="footer__politics">Политика конфеденциальности</a> 2021 © Feelings lab <br>
+					Разработано <a href="#" target="_blank" rel="noopener noreferrer">WSP-studio</a>
             </div>
           </div>
         </div>
@@ -227,14 +230,15 @@
             <h2>Отправить заявку</h2>
             <div class="form-group">
               <div class="form-control">
-                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Имя" name="Name">
               </div>
               <div class="form-control">
-                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="E-mail" name="Email">
               </div>
               <div class="form-control">
                 <button type="submit" class="btn btn-default">Оставить заявку</button>
-                <p class="form__agree"> Нажимая на “Подписаться”,Вы даете согласие на обработку персональных данных и соглашаетесь с пользовательським соглашением и политикой конфиденциальности </p>
+                <p class="form__agree"> Нажимая на “Оставить заявку”,Вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" target="_blank" rel="noopener noreferrer"> пользовательським соглашением и политикой конфиденциальности</a>
+                </p>
               </div>
             </div>
           </form>
